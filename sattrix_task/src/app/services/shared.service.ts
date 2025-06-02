@@ -2,16 +2,16 @@ import { Injectable } from '@angular/core';
 import { BehaviorSubject } from 'rxjs';
 
 const initialRegisterUsers = [
-  { id:1, first_name: 'Mark', last_name: 'Otto', username: 'markotto@gmail.com', password:'abcd@1441' },
-  { id:2, first_name: 'Jacob', last_name: 'Thornton', username: 'jacob@gmail.com', password:'abcd@1441' },
-  { id:3, first_name: 'John', last_name: 'Doe', username: 'johndoe@gmail.com', password:'abcd@1441' },
-  { id:4, first_name: 'Emily', last_name: 'Stone', username: 'emilystone@gmail.com', password:'abcd@1441' },
-  { id:5, first_name: 'Sophia', last_name: 'Johnson', username: 'sjohnson@gmail.com', password:'abcd@1441' },
-  { id:6, first_name: 'Michael', last_name: 'Brown', username: 'mbrown@gmail.com', password:'abcd@1441' },
-  { id:7, first_name: 'David', last_name: 'Clark', username: 'dclark@gmail.com', password:'abcd@1441' },
-  { id:8, first_name: 'Emma', last_name: 'Watson', username: 'emmaw@gmail.com', password:'abcd@1441' },
-  { id:9, first_name: 'Daniel', last_name: 'Lee', username: 'dlee@gmail.com', password:'abcd@1441' },
-  { id:10, first_name: 'Olivia', last_name: 'Martinez', username: 'oliviam@gmail.com', password:'abcd@1441' },
+  { id:1, name: 'Mark', email:'markotto@gmail.com', phone:'8764545327' ,city:'nagpur' },
+  { id:2, name: 'Jacob', email: 'jacob@gmail.com',phone:'8764545327',city:'nashik' },
+  { id:3, name: 'John',email: 'johndoe@gmail.com', phone:'8764545327',city:'pune' },
+  { id:4,name: 'Emily', email: 'emilystone@gmail.com',phone:'8764545327',city:'mumbai' },
+  { id:5, name: 'Sophia',  email: 'sjohnson@gmail.com',phone:'8764545327',city:'gondia' },
+  { id:6, name: 'Michael',  email: 'mbrown@gmail.com', phone:'8764545327',city:'kalhpur' },
+  { id:7, name: 'David',  email: 'dclark@gmail.com',phone:'8764545327',city:'satara' },
+  { id:8, name: 'Emma',  email: 'emmaw@gmail.com',phone:'8764545327',city:'sangli' },
+  { id:9, name: 'Daniel', email: 'dlee@gmail.com',phone:'8764545327',city:'ratnagiri' },
+  { id:10, name: 'Olivia',  email: 'oliviam@gmail.com',phone:'8764545327',city:'thane'},
 ];
 @Injectable({
   providedIn: 'root'

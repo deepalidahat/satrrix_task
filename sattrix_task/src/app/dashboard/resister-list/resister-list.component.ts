@@ -27,6 +27,6 @@ export class ResisterListComponent implements OnInit {
   }
 
   editUser(userId: number) {
-    this.router.navigate(['register'], { queryParams: { id: userId } });
+    this.router.navigate(['/home-page/dashboard/register-page'], { queryParams: { id: userId } });
   }
 }

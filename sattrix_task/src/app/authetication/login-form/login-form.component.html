@@ -1,10 +1,10 @@
-<div class="row">
+ <div class="row" >
   <div class="col-md-4 offset-md-4 col-sm-6 offset-sm-3">
     <div class="card auth">
       <div class="card-body auth-card">
         <form [formGroup]="loginForm" (ngSubmit)="getLogin(loginForm.value)">
           <div class="form-group">
-            <label for="email">Email : </label>
+            <label for="email">User Name : </label>
             <input
               type="text"
               name="email"
@@ -38,7 +38,7 @@
           </div>
         </form>
         <div class="text-center sign-up">
-          Don`t have an account ? <a [routerLink]="['/register']">Register</a> here.
+          Don`t have an account ? <a [routerLink]="['/login/register']">Register</a> here.
         </div>
       </div>
     </div>
