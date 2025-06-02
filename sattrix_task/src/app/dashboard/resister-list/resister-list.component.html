@@ -1,0 +1,33 @@
+<table class="table table-hover">
+  <thead>
+    <tr>
+      <th scope="col">Sr.no</th>
+      <th scope="col">First Name</th>
+      <th scope="col">Last Name</th>
+      <th scope="col">User Name</th>
+      <th scope="col">Action</th>
+    </tr>
+  </thead>
+  <tbody>
+    @for (user of registerUser;track user.id; let i = $index) {
+    <tr>
+      <th scope="row">{{ i + 1 }}</th>
+      <td>{{ user.first_name }}</td>
+      <td>{{ user.last_name }}</td>
+      <td>{{ user.username }}</td>
+      <td>
+        <button
+          class="btn btn-sm btn-info"
+          [ngStyle]="{ 'margin-right': '10px' }"
+          (click)="editUser(user.id)"
+        >
+          Edit
+        </button>
+        <button class="btn btn-sm btn-danger" (click)="deleteUser(user.id)">
+          Delete
+        </button>
+      </td>
+    </tr>
+    }
+  </tbody>
+</table>
