@@ -9,6 +9,11 @@ export const authPageRoute: Routes = [
     path: '',
     component: LogInComponent,
     children: [
+         {
+        path: '',
+        redirectTo: 'login-form',
+        pathMatch: 'full'  
+      },
       {
         path: 'login-form',
         component: LoginFormComponent 
